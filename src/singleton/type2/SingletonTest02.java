@@ -1,4 +1,4 @@
-package sigleton.type2;
+package singleton.type2;
 
 public class SingletonTest02 {
 
