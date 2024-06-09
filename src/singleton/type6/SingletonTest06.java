@@ -15,7 +15,7 @@ public class SingletonTest06 {
 
 }
 
-// 懶漢式( thread safe ，同步方法)
+// 雙重檢查( thread safe ，同步方法)
 
 class Singleton {
 	private static volatile Singleton instance;
