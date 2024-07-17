@@ -11,7 +11,7 @@ public class Liskov {
     System.out.println("----------------------------------------");
 
     B b = new B();
-    // 因為B類不再繼承A類，因此調用者，不會再認為func1是求剪髮
+    // 因為B類不再繼承A類，因此調用者，不會再認為func1是求 減法
     // 調用完成的功能就會很明確
     System.out.println("11+3=" + b.func1(11, 3));
     System.out.println("1+8=" + b.func1(1, 8));
