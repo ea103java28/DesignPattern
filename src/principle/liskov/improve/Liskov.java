@@ -19,8 +19,8 @@ public class Liskov {
 
 
 
-    // 使用 組合 扔然可以使用到A類相關方法
-    System.out.println("11-3=" + b.func3(11, 3)); // 這裡本意是求出11-3
+    // 使用 組合 仍然可以使用到A類相關方法
+    System.out.println("11-3=" + b.func3(11, 3)); 
 
 
 
@@ -51,7 +51,7 @@ class B extends Base {
   // 如果B需要使用A類方法，使用組合關係
   private A a = new A();
 
-  // 這裡，重寫了A類的方法，不小心的
+  
   public int func1(int a, int b) {
     return a + b;
   }
@@ -61,7 +61,7 @@ class B extends Base {
     return func1(a, b) + 9;
   }
 
-  // 我們扔然想使用A方法
+  // 我們仍然想使用A方法
   public int func3(int a, int b) {
     return this.a.func1(a, b);
   }
